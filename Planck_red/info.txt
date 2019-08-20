@@ -1,5 +1,5 @@
 
-Planck Rev 3
+Planck Rev 2
 ============
 
 through hole soldering
