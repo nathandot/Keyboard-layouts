@@ -25,7 +25,7 @@
 		DONE - add "_CODE" layer
 		- compile best code layer fctns
 		REMOVED - consider long-hold-caps functionality
-		- estimate codespace size, consider potential backport for rev2 board
+		DONE - estimate codespace size, consider potential backport for rev2 board
 		- port to [Let's Split] kb
 		- port to [Planck_Gray] kb
 		
