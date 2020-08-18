@@ -15,20 +15,20 @@
  */
 
 
- 
+
 /*	Nathan Steward 5/23/2019 Rev. 2.0.0
-	
+
 	TODO:
 		- TBA
-		
+
 	CHANGELOG:
 		- Rev 2.0.0
-      - forked from Red Planck Rev 1.0.3
-      
- */
- 
- 
- 
+        - forked from Red Planck Rev 1.0.3
+
+*/
+
+
+
 #include QMK_KEYBOARD_H
 
 extern keymap_config_t keymap_config;
