@@ -56,8 +56,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     [_BASE] = LAYOUT(
         KC_MUTE, FN_ONE,  FN_TWO,  \
-        XXXXXXX, XXXXXXX, XXXXXXX, \
-        XXXXXXX, XXXXXXX, XXXXXXX  \
+        KC_F22,  KC_F23,  KC_F24,  \
+        KC_F19,  KC_F20,  KC_F21   \
     ),
     [_FN_ONE] = LAYOUT(
         ALT_LOCK,FN_BASE, FN_TWO,  \
