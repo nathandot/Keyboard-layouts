@@ -1,8 +1,5 @@
 
-Planck Rev 3
+Planck Rev __
 ============
 
-through hole soldering
-MX Halo Trues
-DSA profile blank keycaps
-2u spacebar, no stab installed
+TBD
