@@ -4,5 +4,5 @@ Planck Rev 6.1
 
 Kailh hot-swap sockets
 MX Kailh Pro Purple
-DSA profile blank keycaps
+PMK DSA Alchemy
 left-shifted 2u spacebar,stab installed
