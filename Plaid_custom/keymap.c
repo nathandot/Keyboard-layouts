@@ -16,15 +16,16 @@
 
 
 
-/*	Nathan Steward 7/23/2020 Rev. 1.0.0
+/*	Nathan Steward 7/23/2020 Rev 1.0.0
 
  	TODO:
  		- TBA
 
  	CHANGELOG:
-        - forked from Gray Planck v2.0.0
+        - Rev 1.0.0
+            - forked from Gray Planck Rev 2.0.0
 
- */
+*/
 
 
 

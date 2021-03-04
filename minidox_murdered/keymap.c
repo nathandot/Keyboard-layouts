@@ -1,3 +1,18 @@
+/*	Nathan Steward 7/5/2020 Rev 1.0.0
+
+	TODO:
+		- TBA
+
+	CHANGELOG:
+		- Rev 1.0.0
+            - initial setup
+            - attempted to port from gray Planck as close as possible
+            - League Layer to mimic Razer Tartarus
+
+*/
+
+
+
 #include QMK_KEYBOARD_H
 
 extern keymap_config_t keymap_config;

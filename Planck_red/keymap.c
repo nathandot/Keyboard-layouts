@@ -15,9 +15,9 @@
  */
 
 
- 
-/*	Nathan Steward 5/23/2019 Rev. 1.0.1
-	
+
+/*	Nathan Steward 5/23/2019 Rev 1.0.2
+
 	TODO:
 		DONE - remove extraneous layers (using qwerty only)
 		DONE - remove midi and audio functionality
@@ -27,8 +27,8 @@
 		REMOVED - consider long-hold-caps functionality
 		DONE - estimate codespace size, consider potential backport for rev2 board
 		- port to [Let's Split] kb
-		- port to [Planck_Gray] kb
-		
+		DONE - port to [Planck_Gray] kb
+
 	CHANGELOG:
 		- Rev 1.0.0
 			- started branch
@@ -41,9 +41,9 @@
 			- remapped FN keys to _ADJUST layer
 		- Rev 1.0.2
 			- swapped LGUI and LALT to prep for Gray Planck layout uniformity
- */
- 
- 
+*/
+
+
  
 #include QMK_KEYBOARD_H
 
