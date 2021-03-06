@@ -1,19 +1,12 @@
-/*	Nathan Steward 3/5/2021 Rev 1.2.0
+/*	Nathan Steward 3/5/2021 Rev 0.0.0
 
 	TODO:
 		- TBA
 
 	CHANGELOG:
-		- Rev 1.0.0
-            - initial setup
-            - attempted to port from gray Planck as close as possible
-            - League Layer to mimic Razer Tartarus
-        - Rev 1.2.0
-            - added new layer for FPS games
-            - renamed _LEAGUE layer to _MOBA
-            - moved defines for layers to enum
-            - renamed enums from "custom_*" to "minidox_*"
-
+		- Rev 0.0.0
+            - initial setup/ test env for new features
+            - new layer for fps?
 */
 
 
@@ -45,6 +38,7 @@ enum minidox_keycodes {
 // Defines for task manager and such
 #define CALTDEL LCTL(LALT(KC_DEL))
 #define TSKMGR LCTL(LSFT(KC_ESC))
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 

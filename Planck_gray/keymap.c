@@ -23,7 +23,7 @@
 
 	CHANGELOG:
 		- Rev 2.0.0
-            - forked from Red Planck Rev 1.0.3
+            - forked from Red Planck Rev 1.0.2
 
 */
 
