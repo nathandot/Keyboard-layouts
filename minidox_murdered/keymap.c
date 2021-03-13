@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     XXXXXXX, _______, XXXXXXX,      XXXXXXX, _______, XXXXXXX                   \
 ),
 
-/* League layer
+/* MOBA layer
  *
  * ,----------------------------------.           ,----------------------------------.
  * |   H  |   J  |   K  |   L  |   F  |           |XXXXXX|XXXXXX|XXXXXX|XXXXXX|QWERTY|
