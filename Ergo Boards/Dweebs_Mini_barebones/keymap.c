@@ -20,6 +20,10 @@
             - arrow cluster set under right hand, feels comfortable
         - Rev 1.0.1
             - added visual representation of MOBA and FPS layers
+        - Rev 1.0.2
+            - reverted LOWER location to standard
+            - added Backspace/Enter to right thumb
+            - fixed MOBA and FPS layouts with null keys
 */
 
 
@@ -66,8 +70,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |LShift|   Z  |   X  |   C  |   V  |   B  |                  |   N  |   M  |   ,  |   .  |   /  | Enter|
  * `-----------------------------------------'                  `-----------------------------------------'
  *                   ,---------------------------.          ,---------------------------.
- *                   |  Gui | Ctrl |  Alt |      |          |      | RAISE|XXXXXX|XXXXXX|
- *                   `--------------------| Space|          | LOWER|--------------------'
+ *                   |  Alt | Ctrl | LOWER|      |          |      | RAISE|  Gui |XXXXXX|
+ *                   `--------------------| Space|          | Bksp |--------------------'
  *                                        |      |          |      |
  *                                        `------'          `------'
  */
@@ -75,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    XXXXXXX,          XXXXXXX, KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
     KC_ESC,  KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    XXXXXXX,          XXXXXXX, KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,  \
-                               KC_LGUI, KC_LCTL, KC_LALT, KC_SPACE,         LOWER,   RAISE,   XXXXXXX, XXXXXXX  \
+                               KC_ALT,  KC_LCTL, LOWER,   KC_SPACE,         KC_BKSP, RAISE,   KC_LGUI, XXXXXXX  \
 ),
 
 /* Lower
@@ -89,7 +93,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------'                  `-----------------------------------------'
  *                   ,---------------------------.          ,---------------------------.
  *                   |      |      |      |      |          |      |      |      |      |
- *                   `--------------------|      |          |      |--------------------'
+ *                   `--------------------|      |          | Enter|--------------------'
  *                                        |      |          |      |
  *                                        `------'          `------'
  */
@@ -97,7 +101,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, XXXXXXX,          XXXXXXX, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, \
     KC_DEL,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,          XXXXXXX, XXXXXXX, KC_MINS, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, KC_UNDS, KC_EQL,  KC_LBRC, KC_RBRC, _______, \
-                               _______, _______, _______, _______,          _______, _______, _______, _______  \
+                               _______, _______, _______, _______,          KC_ENT,  _______, _______, _______  \
 ),
 
 /* Raise
@@ -145,18 +149,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 //TODO
-/* Adjust
+/* MOBA
  *
  * ,------------------------------------------------.    ,------------------------------------------------.
  * |XXXXXX|   H  |   J  |   K  |   L  |   F  |XXXXXX|    |XXXXXX|XXXXXX|XXXXXX|XXXXXX| FPSW | QWSW |XXXXXX|
  * |------+------+------+------+------+------+------|    |------+------+------+------+------+------+------|
  * |XXXXXX|   Q  |   W  |   E  |   R  |   T  |XXXXXX|    |XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|
  * |------+------+------+------+------+------+------'    `------+------+------+------+------+------+------|
- * |XXXXXX|   B  |   P  |   G  |   4  |   D  |                  |XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|      |
+ * |XXXXXX|   B  |   P  |   G  |   4  |   D  |                  |XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|
  * `-----------------------------------------'                  `-----------------------------------------'
  *                   ,---------------------------.          ,---------------------------.
- *                   |XXXXXX|   Y  |  Tab |      |          |      |      |      |      |
- *                   `--------------------| Space|          |      |--------------------'
+ *                   |XXXXXX|   Y  |  Tab |      |          |      |XXXXXX|XXXXXX|XXXXXX|
+ *                   `--------------------| Space|          |XXXXXX|--------------------'
  *                                        |      |          |      |
  *                                        `------'          `------'
  */
@@ -168,18 +172,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 //TODO
-/* Adjust
+/* FPS
  *
  * ,------------------------------------------------.    ,------------------------------------------------.
  * |  Tab |   Q  |   W  |   E  |   R  |   T  |  F1  |    |XXXXXX|XXXXXX|XXXXXX|XXXXXX| QWSW | MOSW |XXXXXX|
  * |------+------+------+------+------+------+------|    |------+------+------+------+------+------+------|
  * | Shift|   A  |   S  |   D  |   F  |   G  |   M  |    |XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|
  * |------+------+------+------+------+------+------'    `------+------+------+------+------+------+------|
- * | Ctrl |   Z  |   X  |   C  |   V  |   B  |                  |XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|      |
+ * | Ctrl |   Z  |   X  |   C  |   V  |   B  |                  |XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|XXXXXX|
  * `-----------------------------------------'                  `-----------------------------------------'
  *                   ,---------------------------.          ,---------------------------.
- *                   |  Esc |  Alt | Space|      |          |      |      |      |      |
- *                   `--------------------|XXXXXX|          |      |--------------------'
+ *                   |XXXXXX|  Esc |  Alt |      |          |      |XXXXXX|XXXXXX|XXXXXX|
+ *                   `--------------------| Space|          |XXXXXX|--------------------'
  *                                        |      |          |      |
  *                                        `------'          `------'
  */
@@ -187,7 +191,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_F1,            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, QWSW,    MOSW,    XXXXXXX, \
     KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_M,             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
     KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
-                               KC_ESC,  KC_ALT,  KC_SPACE,XXXXXXX,          XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX  \
+                               XXXXXXX, KC_ESC,  KC_ALT,  KC_SPC,           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX  \
 )
 };
 
