@@ -4,5 +4,5 @@ Planck Rev 6.1
 
 Kailh hot-swap sockets
 MX Kailh Pro Burgundy
-DSA profile PMK Alchemy keycaps
+XDA profile Matcha keycaps (Korean subtext)
 2u spacebar left-shifted, stab installed
