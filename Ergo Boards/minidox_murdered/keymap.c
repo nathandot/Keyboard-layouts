@@ -13,7 +13,10 @@
             - renamed _LEAGUE layer to _MOBA
             - moved defines for layers to enum
             - renamed enums from "custom_*" to "minidox_*"
-
+        - Rev 1.2.1
+            - moved arrow cluster from left hand RAISE layer to right hand
+                - should reflect 'Dweebs Mini' arrow cluster
+                - forced PGUP/PGDN and HOME/END keys to move as well
 */
 
 
@@ -97,9 +100,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,----------------------------------.           ,----------------------------------.
  * |   1  |   2  |   3  |   4  |   5  |           |   6  |   7  |   8  |   9  |   0  |
  * |------+------+------+------+------|           |------+------+------+------+------|
- * |  Tab | Left | Down |  Up  | Right|           |XXXXXX| PgUp | Home |XXXXXX|XXXXXX|
+ * |  Tab |XXXXXX|XXXXXX|XXXXXX| PgUp |           | Home |XXXXXX|  Up  |XXXXXX|XXXXXX|
  * |------+------+------+------+------|           |------+------+------+------+------|
- * |  Ctrl|   `  |  GUI |  Alt |XXXXXX|           |XXXXXX| PgDn | End  |XXXXXX|XXXXXX|
+ * |  Ctrl|   `  |  GUI |  Alt | PgDn |           | End  | Left | Down |Right |XXXXXX|
  * `----------------------------------'           `----------------------------------'
  *                  ,--------------------.    ,------,-------------.
  *                  |      |      |      |    |      |      |      |
@@ -109,8 +112,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT(
   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,   \
-  KC_TAB,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,      XXXXXXX, KC_PGUP, KC_HOME, XXXXXXX, XXXXXXX,\
-  KC_LCTL, KC_GRV,  KC_LGUI, KC_LALT, XXXXXXX,      XXXXXXX, KC_PGDN, KC_END,  XXXXXXX, XXXXXXX,\
+  KC_TAB,  XXXXXXX, XXXXXXX, XXXXXXX, KC_PGUP,      KC_HOME, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,\
+  KC_LCTL, KC_GRV,  KC_LGUI, KC_LALT, KC_PGDN,      KC_END,  KC_LEFT, KC_DOWN, KC_RIGHT, XXXXXXX,\
                     _______, _______, _______,      _______, _______, _______                   \
 ),
 

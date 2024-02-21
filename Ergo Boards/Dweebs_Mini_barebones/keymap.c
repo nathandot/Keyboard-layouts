@@ -1,4 +1,4 @@
-/*	Nathan Steward 3/31/2021 Rev /1.0.1
+/*	Nathan Steward 3/31/2021 Rev 1.0.1
 
     ::IMPORTANT::
         - use test env for compile "https://github.com/doesntfazer/qmk_firmware/"
@@ -63,9 +63,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Qwerty
  *
  * ,------------------------------------------------.    ,------------------------------------------------.
- * |  Tab |   Q  |   W  |   E  |   R  |   T  |XXXXXX|    |XXXXXX|   Y  |   U  |   I  |   O  |   P  | Bksp |
+ * |  Tab |   Q  |   W  |   E  |   R  |   T  | PgUp |    | Home |   Y  |   U  |   I  |   O  |   P  | Bksp |
  * |------+------+------+------+------+------+------|    |------+------+------+------+------+------+------|
- * |  Esc |   A  |   S  |   D  |   F  |   G  |XXXXXX|    |XXXXXX|   H  |   J  |   K  |   L  |   ;  |   '  |
+ * |  Esc |   A  |   S  |   D  |   F  |   G  | PgDn |    | End  |   H  |   J  |   K  |   L  |   ;  |   '  |
  * |------+------+------+------+------+------+------'    `------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |                  |   N  |   M  |   ,  |   .  |   /  | Enter|
  * `-----------------------------------------'                  `-----------------------------------------'
